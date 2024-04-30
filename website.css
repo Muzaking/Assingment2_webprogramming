@@ -1,0 +1,252 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('army.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Default text color */
+}
+
+/* Header Styles */
+header {
+    background-color: rgb(3, 79, 3);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+/* Main Content Styles */
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Sidebar Styles */
+aside {
+    width: 40%; /* Increased to 40% */
+    padding: 20px;
+    background-color: rgb(40, 39, 39);
+    border: 5px solid rgb(3, 79, 3);
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* UTM Email Styles */
+.utm-email {
+    text-align: center;
+    padding: 20px;
+    width: 20%;
+    background-color: black;
+    border: 5px solid rgb(3, 79, 3);
+}
+
+/* UTM Styles */
+.utm {
+    width: 309x;
+    height: 200px;
+    color: green;
+    font-style: italic;
+    font-weight: bold;
+    background-image: url(utm.gif);
+    background-repeat: no-repeat;
+    background-position: right; /* Align the background image to the right */
+    background-size: cover; /* Fit the background image to cover the element */
+    text-align: center; /* Center the text horizontally */
+    padding: 5px; 
+    
+}
+/* About Me Section Styles */
+#about-me {
+    width: calc(100% - 40px); /* Full width with padding */
+    padding: 20px;
+    margin: 20px auto; /* Center horizontally */
+    max-width: 800px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange items vertically */
+}
+
+#about-me div {
+    margin-bottom: 20px; /* Add margin between the two sections */
+}
+
+#about-me img {
+    width: 100%; /* Make the image fill the container width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Apply rounded corners */
+}
+
+
+
+#about-me h2 {
+    font-size: 24px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+#about-me p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 0; /* Remove top margin for paragraph */
+}
+
+/* Info Section Styles */
+#info {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 5px solid black; /* Changed border color to black */
+    border-radius: 10px;
+    background-color: rgb(3, 79, 3);
+    color: white;
+    text-align: left;
+}
+
+#info ul {
+    padding-left: 20px;
+}
+
+#info ul li {
+    padding: 5px 0;
+}
+
+#info ul li a {
+    text-decoration: underline;
+    margin-left: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed; /* Position fixed at the bottom of the viewport */
+    bottom: 0; /* Stick it to the bottom */
+    width: 100%;
+}
+
+/* Additional Styles */
+
+/* .section Styles */
+.section {
+    padding: 20px; /* Increased padding for better spacing */
+}
+
+/* .dropdown Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 10px; /* Added padding for better spacing */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Skills Section Styles */
+/* Skills Section Styles */
+.skill-logo {
+    width: 60px; /* Set a fixed width */
+    height: 60px; /* Set a fixed height */
+    background-color: #f1f1f1; /* Light gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-logo img {
+    max-width: 100%; /* Ensure the image does not exceed the container's width */
+    max-height: 100%; /* Ensure the image does not exceed the container's height */
+    border-radius: 10px; /* Apply rounded corners to the image */
+}
+
+
+.skill-name {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-list li {
+    margin-bottom: 20px;
+}
+
+.progress {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    height: 15px;
+    width: 100%; /* Full width */
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+    width: 50%; /* Default width */
+    transition: width 0.5s;
+}
+
+@media screen and (min-width: 768px) {
+    /* Adjustments for tablets and desktops */
+
+    /* Sidebar Styles */
+    aside {
+        width: 30%; /* 30% width on tablets and desktops */
+    }
+
+    /* UTM Email Styles */
+    .utm-email {
+        width: 20%; /* 20% width on tablets and desktops */
+    }
+
+    /* About Me Section Styles */
+    #about-me {
+        width: 60%; /* 60% width on tablets and desktops */
+    }
+
+    /* Info Section Styles */
+    #info {
+        width: 60%; /* 60% width on tablets and desktops */
+    }
+}
